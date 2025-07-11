@@ -9,8 +9,14 @@ module "dev-Mayank" {
   resource_group_name     = "myRg123Mayank"
   resource_group_location = "Central India"
 }
+module "dev-Mayank" {
+  source                  = "../Child_Module/azurerm_resource_group"
+  resource_group_name     = "myRg123Mayank2"
+  resource_group_location = "east India"
+
 module "dev-Mayank2" {
   source                  = "../Child_Module/azurerm_resource_group"
   resource_group_name     = "myRg123Mayank2"
   resource_group_location = "West US"
+
 }
