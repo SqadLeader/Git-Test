@@ -12,5 +12,5 @@ module "dev-Mayank" {
 module "dev-Mayank" {
   source                  = "../Child_Module/azurerm_resource_group"
   resource_group_name     = "myRg123Mayank2"
-  resource_group_location = "Central India"
+  resource_group_location = "east India"
 }
