@@ -21,7 +21,12 @@ module "dev-Mayank2" {
 
 }
 
+
 module "dev-Paritosh-rg" {
+
+
+module "dev-dhiraj-rg" {
+
   source                  = "../Child_Module/azurerm_resource_group"
   resource_group_name     = "myRg123Mayank2"
   resource_group_location = "West US"
