@@ -23,7 +23,14 @@ module "dev-Mayank2" {
 
 module "dev-Paritosh1-rg" {
   source                  = "../Child_Module/azurerm_resource_group"
-  resource_group_name     = "paritosh-rg-dev"
+  resource_group_name     = "paritosh1-rg-dev"
+  resource_group_location = "West US"
+
+}
+
+module "dev-Paritosh2-rg" {
+  source                  = "../Child_Module/azurerm_resource_group"
+  resource_group_name     = "paritosh1-rg-dev"
   resource_group_location = "West US"
 
 }
